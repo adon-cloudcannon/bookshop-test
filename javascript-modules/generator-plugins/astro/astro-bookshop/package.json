@@ -1,0 +1,40 @@
+{
+  "name": "@bookshop/astro-bookshop",
+  "packageManager": "pnpm@10.11.0",
+  "version": "3.18.0-alpha.1",
+  "type": "module",
+  "description": "Astro plugin for consuming Bookshop components",
+  "exports": {
+    ".": "./main.js",
+    "./browser": "./BookshopBrowser.astro",
+    "./helpers/frontmatter-helper": "./helpers/frontmatter-helper.js",
+    "./helpers/frontmatter-helper.js": "./helpers/frontmatter-helper.js"
+  },
+  "scripts": {
+    "test": "nyc ava -v"
+  },
+  "files": [
+    "**/*.js",
+    "!**/*.test.js"
+  ],
+  "author": "@bglw",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "ava": "^6.4.1",
+    "nyc": "^17.1.0"
+  },
+  "dependencies": {
+    "@bookshop/helpers": "3.14.0",
+    "@bookshop/vite-plugin-astro-bookshop": "workspace:*",
+    "@cloudcannon/remark-auto-import": "^1.0.1"
+  },
+  "peerDependencies": {
+    "react-dom": "^17.0.2 || ^18.0.0"
+  },
+  "engines": {
+    "node": ">=14.16"
+  }
+}

@@ -1,0 +1,29 @@
+packages:
+  - bookshop-sass
+  - browser
+  - builder
+  - engines/astro-engine
+  - engines/jekyll-engine
+  - engines/eleventy-engine
+  - engines/svelte-engine
+  - engines/hugo-engine
+  - generate
+  - generator-plugins/eleventy/eleventy-bookshop
+  - generator-plugins/sveltekit/sveltekit-bookshop
+  - generator-plugins/astro/astro-bookshop
+  - generator-plugins/astro/vite-plugin-astro-bookshop
+  - helpers
+  - init
+  - toolproof-tests
+  - live
+  - styles
+  - up
+ignoredBuiltDependencies:
+  - sharp
+onlyBuiltDependencies:
+  - esbuild
+overrides:
+  devalue@<5.3.2: '>=5.3.2'
+  brace-expansion@>=1.0.0 <=1.1.11: '>=1.1.12'
+  brace-expansion@>=2.0.0 <=2.0.1: '>=2.0.2'
+  tmp@<=0.2.3: '>=0.2.4'

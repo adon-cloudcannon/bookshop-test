@@ -1,0 +1,40 @@
+{
+  "name": "@bookshop/live",
+  "packageManager": "pnpm@10.11.0",
+  "version": "3.18.0-alpha.1",
+  "description": "Live component renderer for editing from a CMS",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "test": "nyc ava -v",
+    "manual-test": "node cli.js -b .test/fixtures -o .test/manual/index.js && cd .test/manual && python -m SimpleHTTPServer"
+  },
+  "bin": {
+    "bookshop-live": "cli.js"
+  },
+  "files": [
+    "**/*.js",
+    "!**/*.test.js",
+    "!.test/**/*"
+  ],
+  "author": "@bglw",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@bookshop/eleventy-engine": "workspace:*",
+    "@bookshop/jekyll-engine": "workspace:*",
+    "ava": "^6.4.1",
+    "jsdom": "^27.0.0",
+    "nyc": "^17.1.0"
+  },
+  "dependencies": {
+    "@bookshop/builder": "workspace:*",
+    "@bookshop/helpers": "workspace:*",
+    "commander": "^8.1.0"
+  },
+  "engines": {
+    "node": ">=14.16"
+  }
+}

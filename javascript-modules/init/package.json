@@ -1,0 +1,40 @@
+{
+  "name": "@bookshop/init",
+  "packageManager": "pnpm@10.11.0",
+  "version": "3.18.0-alpha.1",
+  "description": "",
+  "type": "module",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloudcannon/bookshop.git",
+    "directory": "init"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "files": [
+    "**/*.js",
+    "**/*.ejs.t",
+    "!**/*.test.js"
+  ],
+  "author": "@CloudCannon",
+  "license": "MIT",
+  "bin": {
+    "bookshop-init": "main.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@bookshop/helpers": "workspace:*",
+    "chalk": "^5.0.1",
+    "commander": "^9.1.0",
+    "ejs": "^3.1.6",
+    "fast-glob": "^3.2.11",
+    "inquirer": "^8.2.1"
+  },
+  "engines": {
+    "node": ">=14.16"
+  }
+}

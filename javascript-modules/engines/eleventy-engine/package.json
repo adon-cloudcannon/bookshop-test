@@ -1,0 +1,40 @@
+{
+  "name": "@bookshop/eleventy-engine",
+  "packageManager": "pnpm@10.11.0",
+  "version": "3.18.0-alpha.1",
+  "description": "Bookshop frontend Eleventy renderer",
+  "type": "module",
+  "sideEffects": false,
+  "main": "main.js",
+  "exports": {
+    ".": "./main.js",
+    "./build": "./build.js"
+  },
+  "files": [
+    "**/*.js",
+    "!**/*.test.js"
+  ],
+  "scripts": {
+    "test": "nyc ava -v"
+  },
+  "author": "@bglw",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "ava": "^6.4.1",
+    "nyc": "^17.1.0"
+  },
+  "dependencies": {
+    "@bookshop/helpers": "workspace:*",
+    "esbuild": "^0.13.10",
+    "liquidjs": "10.17.0",
+    "markdown-it": "^13.0.1",
+    "punycode": "^2.1.1",
+    "slugify": "^1.5.3"
+  },
+  "engines": {
+    "node": ">=14.16"
+  }
+}

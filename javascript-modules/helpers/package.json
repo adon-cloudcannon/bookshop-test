@@ -1,0 +1,28 @@
+{
+  "name": "@bookshop/helpers",
+  "packageManager": "pnpm@10.11.0",
+  "version": "3.18.0-alpha.1",
+  "description": "",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "test": "nyc ava -v"
+  },
+  "files": [
+    "**/*.js",
+    "!**/*.test.js"
+  ],
+  "author": "CloudCannon",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "ava": "^6.4.1",
+    "liquidjs": "10.17.0",
+    "nyc": "^17.1.0"
+  },
+  "engines": {
+    "node": ">=14.16"
+  }
+}

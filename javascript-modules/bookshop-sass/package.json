@@ -1,0 +1,35 @@
+{
+  "name": "@bookshop/sass",
+  "packageManager": "pnpm@10.11.0",
+  "version": "3.18.0-alpha.1",
+  "description": "Standalone sass compiler for Bookshop",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "test": "nyc ava -v --node-arguments=\"--experimental-json-modules\""
+  },
+  "bin": {
+    "bookshop-sass": "main.js"
+  },
+  "files": [
+    "main.js"
+  ],
+  "author": "@bglw",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "ava": "^6.4.1",
+    "fast-glob": "^3.2.7",
+    "nyc": "^17.1.0"
+  },
+  "dependencies": {
+    "@bookshop/builder": "workspace:*",
+    "@bookshop/helpers": "workspace:*",
+    "commander": "^8.1.0"
+  },
+  "engines": {
+    "node": ">=14.16"
+  }
+}
